@@ -27,33 +27,14 @@ class ShoppingCart:
         self.cart_items.append(item)
     #function remove_item remove item from the cart
     def remove_item(self, item_name):
-        item = None
-        item= self.getItemByName(item_name)
-        if item is None:
-            print("Item not found in cart. Nothing removed.")
-        else:
-            self.cart_items.remove(item)
-            print(item_name," removed from cart")
+            print("not implemented")
     #function getItemByName get the item from list of items by name
     def getItemByName(self, item_name):
-        for item in self.cart_items:
-            if item.item_name == item_name:
-                return item
+            print("not implemented")
+
     #function modify_item get the item from list of items by name and update it
     def modify_item(self, item_name):
-        item = None
-        item= self.getItemByName(item_name)
-        if item is None:
-            print("Item not found in cart. Nothing is modified....")
-        else:
-            item.print_descriptions()
-            item.print_item_cost()
-            #itemmodify =self.get_itemdetails()
-            #item.item_name = itemmodify.item_name
-            #item.item_price = itemmodify.item_price
-            item.item_quantity =  myvalidator.validate_int("Enter updated Item Quantity:","Invalid input.Please enter Item Quantity:")
-            #item.item_description = itemmodify.item_description
-            return
+        print("not implemented")
     #function get_num_items_in_cart to get items in the cart
     def get_num_items_in_cart(self):
         return len(self.cart_items)
@@ -96,13 +77,11 @@ class ShoppingCart:
                 #item.print_descriptions()
             elif choice == 'r':
                 # Remove item
-                item_name = input("Enter the name of the item to remove: ")
-                self.remove_item(item_name)
+                print("not implemented")
             elif choice == 'c':
                 # Modify item
-                item_to_modify = ItemToPurchase()
-                item_name = input("Enter the name of the item to update quantity: ")
-                self.modify_item(item_name)
+                print("not implemented")
+
                 #item.print_descriptions()
             elif choice == 'i':
                 print(f"OUTPUT ITEMS DESCRIPTIONS")
